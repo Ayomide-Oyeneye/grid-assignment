@@ -1,12 +1,21 @@
 import { range } from './utils';
-import "./index.css"
+import './index.css';
 function Grid({ numRows, numCols }) {
   return (
     <div className="grid">
-      {range(numRows).map((rowNumx) => (<div  key={rowNumx} className="row"> {range(numCols).map((colNum) => (  <div  key={colNum} className="cell">  {/*content of cell */} </div> ))} </div> ))}
+      {range(numRows).map((rowNumx) => (
+        <div key={rowNumx} className="row">
+          {' '}
+          {range(numCols).map((colNum) => (
+            <div key={colNum} className="cell">
+              {' '}
+              {/*content of cell */}{' '}
+            </div>
+          ))}{' '}
+        </div>
+      ))}
     </div>
   );
 }
-
 
 export default Grid;
