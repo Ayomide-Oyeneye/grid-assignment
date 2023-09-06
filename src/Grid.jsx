@@ -9,7 +9,6 @@ function Grid({ numRows, numCols }) {
           {range(numCols).map((colNum) => (
             <div key={colNum} className="cell">
               {' '}
-              {/*content of cell */}{' '}
             </div>
           ))}{' '}
         </div>
