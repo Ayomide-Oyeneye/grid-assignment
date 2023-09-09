@@ -3,11 +3,11 @@ import './index.css';
 function Grid({ numRows, numCols }) {
   return (
     <div className="grid">
-      {range(numRows).map((rowNumx) => (
-        <div key={rowNumx} className="row">
+      {range(numRows).map((they) => (
+        <div key={they} className="row">
           {' '}
-          {range(numCols).map((colNum) => (
-            <div key={colNum} className="cell">
+          {range(numCols).map((them) => (
+            <div key={them} className="cell">
               {' '}
             </div>
           ))}{' '}

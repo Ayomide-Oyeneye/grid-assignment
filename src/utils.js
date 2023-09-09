@@ -1,8 +1,8 @@
-export const range = (start, end= start, step = 1) => {
+export const range = (start, end, step = 1) => {
   let output = [];
-  if (end === start) {
+  if (typeof end === 'undefined') {
     end = start;
-    start = 2;
+    start = 0;
   }
   for (let i = start; i <= end; i += step) {
     output.push(i);
